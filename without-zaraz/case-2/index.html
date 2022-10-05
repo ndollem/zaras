@@ -28,17 +28,6 @@
             font-family: 'AcuminPro-Bold', Arial;
         }
     </style>
-    <script>
-        window.ahoyUserDefinedConfig = {
-            sendBatch: true,
-            environment: 'production',
-            plentyHostnameProduction: 'https://cdp.vidio.com',
-            plentyHostnameStaging: 'https://cdp.int.vidio.com'
-        };
-        var urlParams = new URLSearchParams(window.location.search);
-    </script>
-    <script src="https://static-web.prod.vid.id/ahoy/ahoy-falcon-2022-01-13-02-35-43.js" defer crossorigin="true"></script>
-    <script src="https://personalization.vidio.com/embed-internal.8324be04cc0adb1be9165f1847ed900281851c7a.js?enable_ptid=false" crossorigin="true" id="embed-internal" defer crossorigin="true"></script>
 
     <!-- Custom styles for this template -->
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
@@ -235,7 +224,22 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <script src="https://adserver.kl-youniverse.com/asyncjs.php"></script>
+    <script src="https://static.adsafeprotected.com/iasADX.js"></script>
+    <!--KLN INFEED-->
+    <script>
+        var infInitCfg = {
+            publisherId : 4685495694,
+            wrapperPage : '',//[(STRING) publisher page url as a wrapper of the content article from infeed or domino],
+            slots : ['inf-1', 'inf-2', 'inf-3', 'inf-4', 'inf-5', 'inf-6'],
+            impTracker :  '',//[(OPTIONAL) Impression Tracker url],
+            clickTracker :  '',//[(OPTIONAL) Click Tracker url],
+            templateID : 132                    
+        };
+    </script>
+    <script src="https://d.infeed.id/resources/js/v0.0.2/infeed-init.js"></script>
+    <!--ENDOF KLN INFEED-->
 
     <script>
         window.jQuery || document.write('<script src="assets/js/vendor/jquery-slim.min.js"><\/script>')
